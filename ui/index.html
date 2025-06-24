@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot PDF Doanh Nghiệp</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-container">
+  <header class="header">
+    <h1>LLM</h1>
+    <p>Tra cứu nội dung từ file PDF bạn đã tải lên</p>
+  </header>
+
+<section class="upload-section">
+  <label for="pdf-file">Chọn PDF</label>
+  <input type="file" id="pdf-file" accept=".pdf">
+  <button onclick="uploadPDF()">Tải lên</button>
+</section>
+
+  <section class="chat-container">
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Nhập câu hỏi về tài liệu...">
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </section>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

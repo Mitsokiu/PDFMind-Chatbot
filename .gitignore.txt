@@ -1,0 +1,18 @@
+# Môi trường ảo
+env/
+.venv/
+
+# Thư viện Python cài đặt
+__pycache__/
+*.py[cod]
+
+# File model lớn
+model/
+*.gguf
+*.dll
+*.lib
+*.pyd
+*.so
+
+# VS Code settings (nếu dùng)
+.vscode/

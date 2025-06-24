@@ -1,0 +1,140 @@
+/* Toàn bộ bố cục */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Container chính */
+.app-container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #2979ff;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Upload section */
+.upload-section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Ẩn input file mặc định */
+.upload-section input[type="file"] {
+  display: none;
+}
+
+/* Custom nút chọn file */
+.upload-section label {
+  padding: 10px 14px;
+  background: #2979ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.upload-section button {
+  padding: 10px 16px;
+  background: #43a047;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload-section button:hover {
+  background: #388e3c;
+}
+
+/* Chat container */
+.chat-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Chat nội dung */
+.chat-box {
+  flex: 1;
+  padding: 16px;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+/* Tin nhắn */
+.chat-message {
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  border-radius: 20px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #d0ebff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background-color: #e0f8ec;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  font-size: 14px;
+  border-bottom-left-radius: 10px;
+}
+
+.chat-input button {
+  padding: 14px 20px;
+  border: none;
+  background: #2979ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-input button:hover {
+  background: #1565c0;
+}
